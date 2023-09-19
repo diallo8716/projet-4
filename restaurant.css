@@ -162,4 +162,19 @@ button {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@media all and (min-width: 1024px) {
+    body {
+        margin: 0;
     }
+    main {
+        padding: ;
+    }
+
+    .container-menu {
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

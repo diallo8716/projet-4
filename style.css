@@ -82,6 +82,9 @@ input.search {
     left: -10px;
 }
 
+.section-restaurant {
+    padding: 20px;
+}
 .card  {
     background-color: white;
     border-radius: 20px;
@@ -136,8 +139,19 @@ input.search {
 .footer {
     background-color: black;
     color: white;
+    padding: 20px;
 }
 
+.footer i {
+    color: white;
+    margin-right: 10px;
+}
+
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
 .logo {
     font-family: 'Raleway', sans-serif;
     font-family: 'Shrikhand', cursive; 
@@ -214,5 +228,31 @@ input.search {
 @keyframes loading {
     0% {
         visibility: visible;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .content-fonction {
+        display: flex;
+        gap: 20px;
+    }
+
+    .fonction {
+        width: 100%;
+    }
+    .contener-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .section-booking, .section-fonction, .section-restaurant {
+        padding: 8px 80px;
+    }
+    .section-restaurant {
+        padding-bottom: 40px;
     }
 }
